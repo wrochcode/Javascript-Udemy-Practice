@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Konversi String dan Number</title>
+  </head>
+  <body>
+    <script>
+      let angka_1 = 1
+      let angka_2 = '1'
+      let result = angka_1 + angka_2
+      console.info(' Default => angka 1 + "1" adalah ' + result)
+      temp = parseInt(angka_2)
+      result = angka_1 + temp
+      console.info(' parseInt => angka 1 + 1 adalah ' + result)
+      temp = Number(angka_2)
+      result = angka_1 + temp
+      console.info(' Number => angka 1 + 1 adalah ' + result)
+      temp = parseFloat(angka_2)
+      result = angka_1 + temp
+      console.info(' parseFloat => angka 1 + 1 adalah ' + result)
+
+      document.writeln(`<p>Sum ${angka_1 + angka_2}</p>`)
+      document.writeln(`<p>parseInt of (1.9) is ${parseInt('1.9')}</p>`)
+      document.writeln(`<p>parseFloat of (1.9) is ${parseFloat('1.9')}</p>`)
+      document.writeln(`<p>Number of (1.9) is ${Number('1.9')}</p>`)
+
+      // Number to String
+      document.writeln(`<br><br><b>Number to string:</b><br>`)
+      const a = 5
+      const b = 7
+      const totalToString = a.toString() + b.toString()
+      const totalBiasa = a + b
+      document.writeln(`a bernilai ${a}<br>`)
+      document.writeln(`b bernilai ${b}<br>`)
+      document.writeln(
+        `hasil penjumlahan "a + b" pake toString : ${totalToString}<br>`
+      )
+      document.writeln(
+        `hasil penjumlahan "a + b" ga pake toString : ${totalBiasa}<br>`
+      )
+
+      // NaN (Nota a Number)
+      document.writeln(`<p>parseInt of (Sora) is ${parseInt('Sora')}</p>`)
+      document.writeln(`<p>parseInt of (1.1Sora) is ${parseInt('1.1Sora')}</p>`)
+      document.writeln(`<p>parseFloat of (Sora) is ${parseFloat('Sora')}</p>`)
+      document.writeln(`<p>parseFloat of (1.2Sora) is ${parseFloat('1.2Sora')}</p>`)
+
+      // Number untuk tidak tolerir apapun
+      document.writeln(`<p>Number of (1Sora) is ${Number('1Sora')}</p>`)
+      document.writeln(`<p>Number of (1.2Sora) is ${Number('1.2Sora')}</p>`)
+      document.writeln(`<p>Number of (Sora) is ${Number('Sora')}</p>`)
+      
+      // Contoh NaN yang di operasikan, misal Penjumlahan
+      const first = Number("salah")
+      const totalNumber = first + 100
+      document.writeln(`totalNumber = first(Number("salah")) + 100 is ${totalNumber}<br>`)
+      
+      // Cek NaN
+      document.writeln(`<br>Cek NaN:<br>`)
+      document.writeln(`Cek NaN from first(first = Number("salah")) is ${isNaN(first)}<br>`)
+      document.writeln(`Cek NaN from 100 is ${isNaN(100)}<br>`)
+      document.writeln(`Cek NaN from NaN is ${isNaN(NaN)}<br>`)
+    </script>
+  </body>
+</html>
