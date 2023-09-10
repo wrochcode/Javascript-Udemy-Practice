@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operator Logika</title>
+  </head>
+  <body>
+    <script>
+      const nilauUjian = 70
+      const nilaiAbsensi = 9
+
+      const lulusUjian = nilauUjian > 73
+      document.writeln(`<br>lulus Ujian = ${lulusUjian}`)
+      const lulusAbsensi = nilaiAbsensi > 7
+      document.writeln(`<br>lulus Absensi = ${lulusAbsensi}`)
+
+      const lulus = lulusUjian && lulusAbsensi
+      document.writeln('<br>hasilnya adalah ' +lulus)
+      
+    </script>
+  </body>
+</html>
