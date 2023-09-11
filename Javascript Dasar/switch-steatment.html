@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Switch Steatment</title>
+  </head>
+  <body>
+    <script>
+      let score = 'e'
+      score = score.toUpperCase()
+      document.write(`Nilai Anda : ${score} <br>`)
+      switch (score) {
+        case 'A':
+          document.write(`Selamat Anda Lulus dengan Predikat Terbaik`)
+          break
+        case 'B':
+          document.write(`Selamat Anda Lulus dengan Predikat Baik`)
+          break
+        case 'C':
+          document.write(`Selamat Anda Lulus dengan Predikat Minimum`)
+          break
+        case 'D':
+          document.write(
+            `Mohon Maaf Anda Tidak Lulus, Coba Lagi Lain Kesempatan`
+          )
+          break
+        case 'E':
+        default:
+          document.write(`Mohon Maaf Anda Salah Jurusan Sepertinya`)
+          break
+      }
+    </script>
+  </body>
+</html>
