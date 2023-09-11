@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipe Data Array</title>
+</head>
+<body>
+    <script>
+        let emptyArray = []
+        let nameArrays = [`Wahyu`, `Sora`, `Aban`]
+
+        nameArrays.push(`Pendekar`)
+        nameArrays.push(`Tampan`, `Rochman`)
+        console.info(nameArrays[1])
+        nameArrays[1] = 'Soo__raaa___'
+        nameArrays.push(`Bantoro`)
+        nameArrays.push([`Pendekar`, `tampan`, `banget`])
+        console.table(nameArrays)
+        delete nameArrays[6]
+        console.table(nameArrays)
+        
+        </script>
+</body>
+</html>
