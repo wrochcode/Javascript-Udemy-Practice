@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Undefined</title>
+  </head>
+  <body>
+    <script>
+      let money
+      if (money === undefined) {
+        document.write(`Undefined variabel<br>`)
+      } else {
+        document.write(`Defined variabel<br>`)
+      }
+
+      // Array
+      let job = [`pengangguran`]
+    //   delete job[0]
+      if (job[0] === undefined) {
+        document.write(`Undefined Array<br>`)
+      } else {
+        document.write(`Defined Array<br>`)
+      }
+
+      // Object
+      let person = {
+        name:'Wahyu',
+        Job:'Pengangguran'
+      }
+    //   delete job[0]
+      if (person.age === undefined) {
+        document.write(`Undefined Object<br>`)
+      } else {
+        document.write(`Defined Object<br>`)
+      }
+    </script>
+  </body>
+</html>
