@@ -1,0 +1,54 @@
+JavaScript memiliki berbagai macam operasi yang dapat digunakan untuk memanipulasi dan berinteraksi dengan array. Berikut adalah beberapa operasi umum pada array JavaScript:
+
+1. **Push dan Pop**:
+   - `push()`: Menambahkan satu atau lebih elemen ke akhir array.
+   - `pop()`: Menghapus dan mengembalikan elemen terakhir dari array.
+
+2. **Shift dan Unshift**:
+   - `unshift()`: Menambahkan satu atau lebih elemen ke awal array.
+   - `shift()`: Menghapus dan mengembalikan elemen pertama dari array.
+
+3. **Splice**:
+   - `splice()`: Mengubah isi array dengan menghapus, menggantikan, atau menambahkan elemen pada posisi tertentu.
+
+4. **Concat**:
+   - `concat()`: Menggabungkan dua atau lebih array menjadi satu array baru.
+
+5. **Slice**:
+   - `slice()`: Membuat salinan bagian dari array dengan memilih elemen dari indeks tertentu hingga indeks tertentu.
+
+6. **Filter**:
+   - `filter()`: Membuat array baru dengan elemen-elemen yang memenuhi kriteria tertentu berdasarkan fungsi yang diberikan.
+
+7. **Map**:
+   - `map()`: Membuat array baru dengan hasil dari pengolahan setiap elemen array asli dengan fungsi yang diberikan.
+
+8. **Reduce**:
+   - `reduce()`: Mengurangi array menjadi satu nilai tunggal dengan menggunakan fungsi penggabungan (reducer) pada setiap elemen.
+
+9. **ForEach**:
+   - `forEach()`: Mengulang setiap elemen dalam array dan menjalankan fungsi pada masing-masing elemen tanpa menghasilkan array baru.
+
+10. **Every dan Some**:
+    - `every()`: Memeriksa apakah semua elemen dalam array memenuhi kriteria tertentu.
+    - `some()`: Memeriksa apakah setidaknya satu elemen dalam array memenuhi kriteria tertentu.
+
+11. **Find dan FindIndex**:
+    - `find()`: Mengembalikan nilai dari elemen pertama dalam array yang memenuhi kriteria tertentu.
+    - `findIndex()`: Mengembalikan indeks dari elemen pertama dalam array yang memenuhi kriteria tertentu.
+
+12. **Sort**:
+    - `sort()`: Mengurutkan elemen-elemen array.
+
+13. **Reverse**:
+    - `reverse()`: Membalik urutan elemen dalam array.
+
+14. **Join**:
+    - `join()`: Menggabungkan semua elemen array menjadi satu string dengan pemisah yang ditentukan.
+
+15. **Includes, IndexOf, dan LastIndexOf**:
+    - `includes()`: Memeriksa apakah array berisi elemen tertentu.
+    - `indexOf()`: Mengembalikan indeks dari elemen pertama yang cocok.
+    - `lastIndexOf()`: Mengembalikan indeks dari elemen terakhir yang cocok.
+
+Operasi-operasi ini sangat berguna untuk memanipulasi dan mengolah data dalam array JavaScript sesuai dengan kebutuhan Anda.

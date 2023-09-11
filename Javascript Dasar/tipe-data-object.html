@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipe Data Object</title>
+</head>
+<body>
+    <script>
+        let person ={}
+        person['name']='Wahyu'
+        person['address']='Tulus Harapan'
+        person['age']=23
+        console.table(person)
+
+        let orang ={'nama':'Wahyu Rochman',alamat:'Tulus Harapan',umur:23}
+        console.table(orang)
+        console.info(`Nama: ${orang.nama}`)
+        console.info(`Alamat: ${orang.alamat}`)
+        console.info(`Umur: ${orang.umur}`)
+        
+        delete orang['umur']
+        console.table(orang)
+    </script>
+</body>
+</html>
