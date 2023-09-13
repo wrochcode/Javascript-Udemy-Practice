@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For In</title>
+  </head>
+  <body>
+    <script>
+      const person = {
+        firstName: `wahyu`,
+        middleName: `rochman`,
+        lastName: `bantoro`,
+      }
+
+      // for in dalam object mengambil property
+      document.writeln(`<p>|Object| Properti dalam Person adalah </p>`)
+      for (const property in person) {
+        document.writeln(
+          `<p>- ${property} dangan value ${person[property]}</p> `
+        )
+      }
+      // for in dalam array mengambil index
+      document.writeln(`<p>|Array| Nama teman dalam Pertmeanan saya adalah </p>`)
+      const nameFriends = ['Yola', 'Sam', 'Michael', 'Daniel']
+      for (const index in nameFriends) {
+        document.writeln(
+          `<p>- ${index} dangan nama ${nameFriends[index]}</p> `
+        )
+      }
+    </script>
+  </body>
+</html>
