@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operator In</title>
+  </head>
+  <body>
+    <script>
+      // Contoh Cek propertis di dalam object => True or False
+      const person = {
+        firstName: 'wahyu',
+        lastName: 'rochman',
+      }
+      if ('firstName' in person) {
+        document.write(
+          `<p>Ya.. ada properti firstName di Person, dan berisi : ${person.firstName}</p>`
+        )
+      } else {
+        document.write(
+          `<p>Yah.. maaf tidak ada properti firstName di Person 😔🥹</p>`
+        )
+      }
+
+      // Contoh Undefined dan null propertis di dalam object
+      const student = {
+        firstName: 'wahyu',
+        middleName: null,
+        lastName: undefined,
+      }
+      if ('middleName' in student) {
+        document.write(
+          `<p>Ya.. ada properti middleName di Person, dan berisi : ${person.firstName}</p>`
+        )
+      } else {
+        document.write(
+          `<p>Yah.. maaf tidak ada properti middleName di Person 😔🥹</p>`
+        )
+      }
+
+      // Contoh Undefined dan null propertis di dalam array
+      const officeColleagues = [undefined, 'jojo', undefined, 'sam']
+      const friendOne = 0 in officeColleagues
+      const friendTwo = 1 in officeColleagues
+      const friendThree = 2 in officeColleagues
+      const friendFourth = 3 in officeColleagues
+      // const friendFifth = 3 in officeColleagues
+      document.write(
+        `<p>Adakah karyawan 1 : ${friendTwo}</p>`
+      )
+      document.write(
+        `<p>Adakah karyawan 2 : ${friendTwo}</p>`
+      )
+      document.write(
+        `<p>Adakah karyawan 3 : ${friendThree}</p>`
+      )
+      document.write(
+        `<p>Adakah karyawan 4 : ${friendFourth}</p>`
+      )
+      document.write(
+        `<p>Adakah karyawan 5 : ${friendFifth}</p>`
+      )
+    </script>
+  </body>
+</html>
