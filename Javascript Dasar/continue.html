@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Continue</title>
+  </head>
+  <body>
+    <script>
+      for(let counter = 1; counter<=10;counter++){
+        document.writeln(`<p>Perjuangan ke ${counter}`)
+        if (counter%2 === 0) {
+          continue
+        }
+        document.writeln(` di terima </p>`)
+      }
+    </script>
+  </body>
+</html>
