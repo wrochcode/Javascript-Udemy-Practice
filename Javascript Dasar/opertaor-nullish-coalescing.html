@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operator Nullish Coalescing</title>
+  </head>
+  <body>
+    <script>
+      let parameter = 90
+      let data = parameter
+      if (data === undefined || data == null) {
+        data = `Nilai default <br>`
+      }
+      document.writeln(`${data}`)
+      
+      // Nullish caolescing
+      data = parameter ?? 'Nilai Belum di Tentukan'
+      document.writeln(data)
+
+    </script>
+  </body>
+</html>
